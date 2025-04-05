@@ -1,0 +1,21 @@
+{
+  "name": "omedwellerwiki",
+  "version": "0.1.0",
+  "description": "![Omedweller](https://media.forgecdn.net/attachments/1149/111/fondo-jpeg.jpeg)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "wivex dev ",
+    "build": "wivex build ",
+    "preview": "wivex preview ",
+    "deploy": "wivex deploy "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "All Rights Reserved",
+  "dependencies": {
+    "wivex": "file:wivex-0.1.4.tgz"
+  }
+}

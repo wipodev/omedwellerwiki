@@ -1,0 +1,26 @@
+<script>
+  let theme = "sun";
+
+  function toggleTheme() {
+    theme = theme === "sun" ? "moon" : "sun";
+    const themePage = theme === "sun" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", themePage);
+    localStorage.setItem("theme", themePage);
+  }
+
+  function loadTheme() {
+    const themePage = localStorage.getItem("theme");
+    document.documentElement.setAttribute("data-theme", themePage ? themePage : "light");
+  }
+
+  export default {
+    beforeMount() {
+      loadTheme();
+    }
+  }
+</script>
+
+<button aria-label="Turn dark mode on or off" class="btn" onclick="toggleTheme()" data-theme-toggle>
+  <i class="wi wi-{theme}"></i>
+  <span>Dark Mode</span>
+</button>
