@@ -1,5 +1,4 @@
 <script>
-  import TitleLib from "./Title_Lib.html";
   import DarkToggle from "./Dark_Toggle.html";
 
   let menu = "";
@@ -11,8 +10,8 @@
 <header>
   <div class="container">
     <a href="/" aria-label="Go to the beginning">
-      <img src="/assets/img/logo.png" alt="Logo">
-      <TitleLib></TitleLib>
+      <img src="/assets/img/logo.jpeg" alt="Logo">
+      <span>Omedweller</span>
     </a>
     <nav>
       <button aria-label="Open menu" class="btn" onclick="toggleMenu" data-btn-menu><i class="wi wi-bars"></i></button>
@@ -50,6 +49,13 @@
         align-items: center;
         text-decoration: none;
         gap: var(--pico-spacing);
+
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+          box-shadow: var(--pico-box-shadow);
+        }
 
         h2 {
           margin-bottom: 0;
